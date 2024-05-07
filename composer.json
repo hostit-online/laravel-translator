@@ -2,6 +2,7 @@
     "name": "hostitonline/laravel-translator",
     "description": "Translate models directly",
     "type": "library",
+    "license": "MIT",
     "autoload": {
         "psr-4": {
             "HostitOnline\\LaravelTranslator\\": "src/"
