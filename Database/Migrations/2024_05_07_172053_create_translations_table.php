@@ -6,11 +6,10 @@ use Illuminate\Support\Facades\Schema;
 
 return new class extends Migration
 {
-    private const CONFIG_KEY = 'laravel-translation';
 
     public function up(): void
     {
-        $translationsTable = config(sprintf('%s.translation_table', self::CONFIG_KEY));
+        $translationsTable = config('laravel-translation.translation_table');
         Schema::create($translationsTable, static function (Blueprint $table) {
             $table->id();
             $table->unsignedBigInteger('translatable_id');
@@ -24,8 +23,7 @@ return new class extends Migration
 
     public function down(): void
     {
-        $translationsTable = config(sprintf('%s.translation_table', self::CONFIG_KEY));
-
+        $translationsTable = config('laravel-translation.translation_table');
         Schema::dropIfExists($translationsTable);
     }
 };
