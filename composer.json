@@ -1,0 +1,24 @@
+{
+    "name": "hostitonline/laravel-translator",
+    "description": "Translate models directly",
+    "type": "library",
+    "autoload": {
+        "psr-4": {
+            "HostitOnline\\LaravelTranslator\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "jesseyvanofferen",
+            "email": "jessey@hostit.online"
+        }
+    ],
+    "require": {},
+    "extra": {
+        "laravel": {
+            "providers": [
+                "HostitOnline\\LaravelTranslator\\TranslationsServiceProvider"
+            ]
+        }
+    }
+}
