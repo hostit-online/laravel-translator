@@ -12,7 +12,7 @@ This package will allow seamless translation integration with your laravel proje
 
 Model:
 
-```
+```php
 <?php
 
 namespace App\Models;
