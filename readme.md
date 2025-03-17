@@ -57,7 +57,7 @@ $product = Product::create([
     'translatable_column' => 'name'
 ]);
 ```
-This package uses the ``app()->getLocale()`` to get the ISO code. This is usually handled in the middleware to ensure the correct language ill be used.
+This package uses the ``app()->getLocale()`` to get the ISO code. This is usually handled in the middleware to ensure the correct language will be used.
 
 `GET /products/<id> HEADERS: [Content-Language => FR]`
 ```php
